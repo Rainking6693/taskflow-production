@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: taskflow-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: SUPABASE_URL
+        value: https://ztrqlzksmychwbmrumbu.supabase.co
+      - key: SUPABASE_ANON_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp0cnFsemtzbXljaHdibXJ1bWJ1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzM0MDU4NjUsImV4cCI6MjA0ODk4MTg2NX0.y6gEd6JT6ybzH5YpWY4H0pI2hN0DqXDPwXnNNEoGzKU
