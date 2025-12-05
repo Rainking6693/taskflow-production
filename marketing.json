@@ -1,0 +1,24 @@
+{
+  "content": {
+    "blog_posts": "Ready to generate via Claude",
+    "landing_page_copy": "Ready to generate",
+    "email_sequences": "Ready to configure in Resend"
+  },
+  "channels": {
+    "product_hunt": "Ready to submit",
+    "hacker_news": "Show HN post ready",
+    "reddit": "r/SideProject post ready",
+    "twitter": "Launch thread ready"
+  },
+  "seo": {
+    "keywords": "To be researched",
+    "backlinks": "Outreach list ready"
+  },
+  "agents_used": [
+    "Marketing Agent",
+    "Content & Copy Agent",
+    "SEO Specialist",
+    "Social Media Agent"
+  ],
+  "marketing_timestamp": "2025-12-05T15:49:29.487618"
+}

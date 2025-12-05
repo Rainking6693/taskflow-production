@@ -1,0 +1,66 @@
+{
+  "stack": {
+    "frontend": "React 18 + TypeScript + Tailwind CSS + Vite",
+    "backend": "Node.js 20 + Express + TypeScript + Prisma",
+    "database": "PostgreSQL 16 (Supabase)",
+    "cache": "Redis 7 (Upstash)",
+    "cloud": "Railway / Vercel",
+    "cdn": "Cloudflare",
+    "monitoring": "Sentry + Plausible Analytics"
+  },
+  "services": [
+    "Web App (React + Vite)",
+    "API Server (Node/Express)",
+    "Database (Supabase Postgres)",
+    "Background Jobs (Bull MQ + Redis)",
+    "Real-time Updates (Supabase Realtime)",
+    "Email Service (Resend)",
+    "Payment Processing (Stripe)"
+  ],
+  "api_endpoints": [
+    "GET /api/v1/health",
+    "POST /api/v1/auth/signup",
+    "POST /api/v1/auth/login",
+    "GET /api/v1/dashboard",
+    "POST /api/v1/checkout",
+    "GET /api/v1/analytics"
+  ],
+  "database_schema": {
+    "users": [
+      "id",
+      "email",
+      "created_at"
+    ],
+    "subscriptions": [
+      "id",
+      "user_id",
+      "plan",
+      "stripe_id"
+    ],
+    "analytics": [
+      "id",
+      "event",
+      "user_id",
+      "timestamp"
+    ],
+    "audit_log": [
+      "id",
+      "action",
+      "user_id",
+      "timestamp"
+    ]
+  },
+  "deployment": {
+    "frontend": "Vercel (auto-deploy from GitHub)",
+    "backend": "Railway (Docker container)",
+    "database": "Supabase (managed Postgres)",
+    "cdn": "Cloudflare (global edge)"
+  },
+  "architecture_agents_used": [
+    "System Architect",
+    "Microservices Architect",
+    "API Designer",
+    "Database Administrator"
+  ],
+  "architecture_timestamp": "2025-12-05T15:49:19.471175"
+}
